@@ -50,37 +50,42 @@ $(document).ready(function () {
 	 * 改用 JsonBird：https://bird.ioliu.cn/
 	 * 
 	 */
-	var url = 'https://bird.ioliu.cn/v1/?url=https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=8';
-	var imgUrls = JSON.parse(sessionStorage.getItem("imgUrls"));
-	var index = sessionStorage.getItem("index");
-	var $panel = $('#panel');
-	if (imgUrls == null) {
-		imgUrls = new Array();
-		index = 0;
-		$.get(url, function (result) {
-			images = result.images;
-			for (let i = 0; i < images.length; i++) {
-				const item = images[i];
-				imgUrls.push(item.url);
-			}
-			var imgUrl = imgUrls[index];
-			var url = "https://www.bing.com" + imgUrl;
-			$panel.css("background", "url('" + url + "') center center no-repeat #666");
-			$panel.css("background-size", "cover");
-			sessionStorage.setItem("imgUrls", JSON.stringify(imgUrls));
-			sessionStorage.setItem("index", index);
-		});
-	} else {
-		if (index == 7)
-			index = 0;
-		else
-			index++;
-		var imgUrl = imgUrls[index];
-		var url = "https://www.bing.com" + imgUrl;
-		$panel.css("background", "url('" + url + "') center center no-repeat #666");
-		$panel.css("background-size", "cover");
-		sessionStorage.setItem("index", index);
-	}
+	// var url = 'https://bird.ioliu.cn/v1/?url=hchrome-untrusted://new-tab-page/custom_background_image?url=https%3A%2F%2Flh5.googleusercontent.com%2Fproxy%2FE60bugMrz3Jw0Ty3vD1HqfrrabnAQGlHzIJjRadV1kDS_XSE0AtWuMnjW9VPvq1YeyPJK13gZw63TQYvh2RlaZq_aQm5xskpsgWW1l67gg3mkYaZr07BQqMV47onKA%3Dw3840-h2160-p-k-no-nd-mvttps://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=8';
+	// var imgUrls = JSON.parse(sessionStorage.getItem("imgUrls"));
+	// var index = sessionStorage.getItem("index");
+	// var $panel = $('#panel');
+	// if (imgUrls == null) {
+	// 	imgUrls = new Array();
+	// 	index = 0;
+	// 	$.get(url, function (result) {
+	// 		images = result.images;
+	// 		for (let i = 0; i < images.length; i++) {
+	// 			const item = images[i];
+	// 			imgUrls.push(item.url);
+	// 		}
+	// 		var imgUrl = imgUrls[index];
+	// 		//var url = "https://www.google.com" + imgUrl;
+	// 		var url='chrome-untrusted://new-tab-page/custom_background_image?url=https%3A%2F%2Flh5.googleusercontent.com%2Fproxy%2FE60bugMrz3Jw0Ty3vD1HqfrrabnAQGlHzIJjRadV1kDS_XSE0AtWuMnjW9VPvq1YeyPJK13gZw63TQYvh2RlaZq_aQm5xskpsgWW1l67gg3mkYaZr07BQqMV47onKA%3Dw3840-h2160-p-k-no-nd-mv'
+	// 		$panel.css("background", "url('" + url + "') center center no-repeat #666");
+	// 		$panel.css("background-size", "cover");
+	// 		sessionStorage.setItem("imgUrls", JSON.stringify(imgUrls));
+	// 		sessionStorage.setItem("index", index);
+	// 	});
+	// } else {
+	// 	if (index == 7)
+	// 		index = 0;
+	// 	else
+	// 		index++;
+	// 	var imgUrl = imgUrls[index];
+	// 	var url = "https://www.google.com" + imgUrl;
+	// 	$panel.css("background", "url('" + url + "') center center no-repeat #666");
+	// 	$panel.css("background-size", "cover");
+	// 	sessionStorage.setItem("index", index);
+	// }
+	    var $panel = $('#panel');
+		$panel.css("background", "url('./images/动漫晚.jpg') center center no-repeat #666");
+	 	$panel.css("background-size", "cover");
+	
 
 	$(".iUp").each(function (i, e) {
 		iUp.up(e);
