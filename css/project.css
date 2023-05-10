@@ -8014,7 +8014,7 @@ hr {
 
 .panel-cover--overlay {
   display: block;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   right: 0;
   bottom: 0;

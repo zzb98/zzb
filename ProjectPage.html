@@ -1,34 +1,31 @@
-<!--
-  本代码由 小宜技术猫 www.azpay.cn 创建
-  严禁反编译、逆向等任何形式的侵权行为，违者将追究法律责任
- -->
 <!DOCTYPE html>
 <html>
 
 <head>
   <!-- 基础信息 -->
   <meta charset="utf-8">
+  </style>
   <meta name="renderer" content="webkit" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="force-rendering" content="webkit" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Elroy">
-  <meta name="keywords" content="Elroy,Personal Website">
-  <meta name="author" content="Elroy">
+  <meta name="description" content="ZZB">
+  <meta name="keywords" content="ZZB,Personal Website">
+  <meta name="author" content="ZZB">
   <title>Personal Portfolio Page</title>
-  <link rel="stylesheet" type="text/css" href="./css/project.css">
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
   <link rel="stylesheet" type="text/css" href="./css/iconfont.css">
   <link rel="apple-touch-icon" href="./images/Avatar_Joker.jpg">
   <link rel="icon" href="./favicon.ico">
   <!--引入SweetAlert
     <script src="https://cdn.jsdelivr.net/npm/sweetalert@2.1.2/dist/sweetalert.min.js"></script>-->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.all.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.all.min.js"></script>
   <!--引入izitoast-->
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/css/iziToast.min.css">
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/js/iziToast.min.js"></script> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/css/iziToast.min.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/js/iziToast.min.js"></script>
   <!--引入fontawesome-->
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fontawesome-pro@master/css/all.min.css"
-    media="all"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fontawesome-pro@master/css/all.min.css"
+    media="all">
   <!--百度站长平台-->
 
   <!--IE淘汰计划-->
@@ -36,15 +33,17 @@
 
 
 </head>
-
-<body oncontextmenu=self.event.returnValue=false onselectstart="return false">
+<!--body oncontextmenu=self.event.returnValue=false onselectstart="return false"-->
+<body background="./images/动漫晚.jpg">
+  
   <!--<span class="mobile btn-mobile-menu">
         <i class="social iconfont icon-list btn-mobile-menu__icon"></i>
         <i class="social iconfont icon-ngleup btn-mobile-close__icon hidden"></i>
     </span>-->
+
   <header id="panel" class="panel-cover">
-    <div class="panel-main" overflow-y:auto>
-      <div class="panel-main__inner panel-inverted" overflow-y:auto>
+    <div class="panel-main">
+      <div class="panel-main__inner panel-inverted">
         <div class="panel-main__content">
           <div class="ih-item circle effect right_to_left">
             <a class="blog-button">
@@ -59,53 +58,42 @@
             </a>
           </div>
           <h1 class="panel-cover__title panel-title iUp">
-            learning, execution and responsibility in this project
+            Personal Portfolio Page
           </h1>
-          <p class="panel-cover__subtitle panel-subtitle iUp"> learning and execution in this project </p>
-          <hr class="panel-cover__divider iUp" />
-          <div class="panel-body iUp">
-            <strong>Project P1: POV Analysis</strong>
-            <p>For phase 1 of our project, Learned how to design POVs for large projects and get the final project framework through POV analysis.</p>
-          </div>
+          <p class="panel-cover__subtitle panel-subtitle iUp">Welcome to my website for HCI project</p>
+          <!--hr class="panel-cover__divider iUp" /-->
+          <!--p id="description" class="panel-cover__description iUp"-->
+          <p class="panel-cover__description iUp">人间无常事，唯镜正衣冠
+            <strong>-ZZB</strong>
+          </p>
           <br />
-          <div class="panel-brainstorm iUp">
-            <br />
-            <img src="./images/POV.png" />
-          </div>
           <br />
           <div class="panel-body iUp">
-            <strong>Project P2: Content Design & Interaction Design</strong>
-           <p>For phase 2 of our project, I learned how to do content design and interaction design for a huge system</p>
-         </div>
-         <div class="panel-brainstorm iUp">
-           <br />
-           <img src="./images/content.png" />
-           <img src="./images/content1.png" />
-           <img src="./images/content2.png" />
-         </div>
-         <br />
-          <div class="panel-body iUp">
-             <strong>Project P3: Design UI</strong>
-            <p>For phase 3 of our project, How to design beautiful interface UI</p>
+            <strong>Self-introduction</strong>
+            <p>Hi, Everyone, My name is Zeng Zhaobo, a master student from Hong Kong University of Technology 
+              <br />
+               my major is Computer Science.
+               <br />
+              My future work direction is back-end development (Java,C++,Python,C and Go) <br />I will join Huawei in November this year.
+            </p>
           </div>
-          <div class="panel-brainstorm iUp">
-            <br />
-            <img src="./images/UI.png" />
-            <img src="./images/UI2.png" />
-          </div>
-
           <div class="navigation-wrapper iUp">
             <div>
               <nav class="cover-navigation cover-navigation--primary">
                 <ul class="navigation">
                   <li class="navigation__item">
-                    <a href="./ProjectPage.html" target="_self" class="blog-button">
-                      <div>ProjectPage</div>
+                    <a href="./index.html" target="_self" class="blog-button">
+                      <div>Home</div>
                     </a>
                   </li>
                   <li class="navigation__item">
                     <a href="./abstract.html" target="_self" class="blog-button">
                       <div>Abstract Page</div>
+                    </a>
+                  </li>
+                  <li class="navigation__item">
+                    <a href="./project.html" target="_self" class="blog-button">
+                      <div>Learning Page</div>
                     </a>
                   </li>
                   <li class="navigation__item">
@@ -222,7 +210,11 @@
   <script type="text/javascript" src="./js/fetch.min.js"></script>
   <script type="text/javascript" src="./js/main.js"></script>
 
+
+
 </body>
+
+
 
 
 </html>
