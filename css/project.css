@@ -7,8 +7,9 @@ html {
 }
 
 body {
-  margin: 0
+  margin: 0;
 }
+
 
 .ih-item.circle.effect {
   margin: 0 auto;
@@ -210,7 +211,7 @@ body {
   height: 128px;
   margin: 0 auto;
   position: relative;
-  overflow: hidden;
+  overflow: scroll;
   background: #88acdb;
   transition: all 0.2s ease-in;
   display: -webkit-box;
@@ -7965,7 +7966,7 @@ hr {
 
 .panel-cover {
   display: block;
-  position: fixed;
+  position: absolute;
   z-index: 900;
   width: 100%;
   max-width: none;
@@ -7982,7 +7983,8 @@ hr {
   transform: translate3d(0, 0, 0);
   -webkit-transition: width 0.6s ease;
   -moz-transition: width 0.6s ease;
-  transition: width 0.6s ease
+  transition: width 0.6s ease;
+  overflow:scroll;
 }
 
 .panel-cover--collapsed {
@@ -8021,6 +8023,7 @@ hr {
   z-index: 1;
   -moz-opacity: .55;
   opacity: .55;
+  
 }
 
 .panel-cover__logo {
@@ -8046,6 +8049,8 @@ hr {
   display: table;
   width: 100%;
   height: 100%;
+  /* overflow:scroll */
+
 }
 
 .panel-main__inner {
@@ -8054,17 +8059,20 @@ hr {
   position: relative;
   z-index: 800;
   padding: 0 60px;
+  /* overflow:scroll */
 }
 
 .panel-main__content {
   max-width: 620px;
   margin: 0 auto;
+  /* overflow:scroll */
 }
 
 .panel-main__content--fixed {
   width: 480px;
   transition: width 1s;
   -webkit-transition: width 1s;
+
   /* Safari */
 }
 
@@ -8481,10 +8489,21 @@ i {
 }
 
 .gwab {
-  background: url(/img/beian.png) no-repeat;
+  /* background: url(/img/beian.png) no-repeat!important;
+  z-index:-1;
   background-size: 12px 12px;
   background-position: 3px 2px;
-  padding-left: 18px;
+  background-attachment: fixed;
+  padding-left: 18px; */
+  background: url(/img/beian.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  position:fixed;
+  background-size: cover;
+  z-index: -1;
+  opacity: .55;
+
 }
 
 @-webkit-keyframes btnGroups {

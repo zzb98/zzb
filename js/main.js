@@ -83,7 +83,7 @@ $(document).ready(function () {
 	// 	sessionStorage.setItem("index", index);
 	// }
 	    var $panel = $('#panel');
-		$panel.css("background", "url('./images/动漫晚.jpg') center center no-repeat #666");
+		$panel.css("background", "url(./images/动漫晚.jpg) center center no-repeat #666");
 	 	$panel.css("background-size", "cover");
 	
 

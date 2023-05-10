@@ -210,7 +210,7 @@ body {
   height: 128px;
   margin: 0 auto;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   background: #88acdb;
   transition: all 0.2s ease-in;
   display: -webkit-box;
